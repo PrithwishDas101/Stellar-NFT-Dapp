@@ -62,7 +62,7 @@ The contract acts as a foundational layer for building NFT-based applications su
 
 
 ## Demo
-<img width="1902" height="883" alt="image" src="https://github.com/user-attachments/assets/7c06e3c2-e0b7-4398-bb75-fdfb374eca89" />
+<img width="1907" height="887" alt="image" src="https://github.com/user-attachments/assets/05124fbd-92f4-4f57-847d-7116eeb1a208" />
 
 
 ## 👨‍💻 Author
