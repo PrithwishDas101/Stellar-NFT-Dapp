@@ -57,6 +57,9 @@ The contract acts as a foundational layer for building NFT-based applications su
 * Enhanced indexing and search
 
 ---
+## The UI
+<img width="1918" height="877" alt="image" src="https://github.com/user-attachments/assets/4ed4d8ca-161b-4ac8-a447-3f7e4254e480" />
+
 
 ## Demo
 <img width="1902" height="883" alt="image" src="https://github.com/user-attachments/assets/7c06e3c2-e0b7-4398-bb75-fdfb374eca89" />
