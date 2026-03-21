@@ -7,7 +7,8 @@
 
 ---
 ## The UI
-<img width="1918" height="877" alt="image" src="https://github.com/user-attachments/assets/4ed4d8ca-161b-4ac8-a447-3f7e4254e480" />
+<img width="1918" height="832" alt="image" src="https://github.com/user-attachments/assets/83529469-4de0-4003-95d3-43cf50db619e" />
+
 
 
 ## Demo
