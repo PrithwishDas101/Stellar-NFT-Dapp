@@ -7,7 +7,7 @@
 
 ---
 ## The UI
-<img width="1918" height="832" alt="image" src="https://github.com/user-attachments/assets/83529469-4de0-4003-95d3-43cf50db619e" />
+
 
 
 
