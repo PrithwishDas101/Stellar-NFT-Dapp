@@ -13,22 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stellar Dapp",
-  description:
-    "Fullstack Dapp built on Stellar",
+  title: "Stellar NFT Dapp",
+  description: "Mint, collect and trade NFTs on Stellar using Soroban",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-[#050510]">
+      <body className="min-h-full flex flex-col bg-[#050510] text-white antialiased selection:bg-[#7c6cf0]/40 selection:text-white">
+
+        {/* 🌌 Global subtle gradient */}
+        <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_10%_10%,#7c6cf015,transparent_40%),radial-gradient(circle_at_90%_80%,#4fc3f715,transparent_40%)]" />
+
+        {/* App Content */}
         {children}
       </body>
     </html>
