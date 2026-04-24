@@ -8,7 +8,7 @@
 ---
 ## The UI
 
-
+<img width="1500" height="1264" alt="NFT-Gallery-Soroban-UI" src="https://github.com/user-attachments/assets/a62279eb-63de-40fd-b74b-5ff8bc4632b3" />
 
 
 ## Demo
