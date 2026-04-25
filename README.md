@@ -1,9 +1,9 @@
-## 🌌 StellarCanvas – NFT Gallery Smart Contract
+## 🌌 StellarNFT Smart Contract
 
 ## 📌 Project Description
 
 
-**StellarCanvas** is a Soroban-based smart contract deployed on the Stellar Testnet that enables a decentralized NFT gallery experience. It allows users to mint, store, transfer, and manage NFTs directly on-chain, with lightweight and efficient contract logic optimized for the Stellar ecosystem.
+**StellarNFT** is a Soroban-based smart contract deployed on the Stellar Testnet that enables a decentralized NFT gallery experience. It allows users to mint, store, transfer, and manage NFTs directly on-chain, with lightweight and efficient contract logic optimized for the Stellar ecosystem.
 
 ---
 ## The UI
