@@ -79,7 +79,7 @@ export default function Home() {
               <h1 className="max-w-2xl text-[2.9rem] font-semibold leading-[0.99] tracking-[-0.065em] text-white sm:text-6xl lg:text-[4.5rem]">
                 Digital art,
                 <br />
-                <span className="text-[#A08A63]">without the noise.</span>
+                <span className="text-[#B6A078]">without the noise.</span>
               </h1>
 
               <p className="mt-6 max-w-lg text-base leading-7 text-white/55 sm:text-lg sm:leading-8">
@@ -106,8 +106,8 @@ export default function Home() {
 
               <div className="mt-8 flex items-center gap-3 text-xs text-white/35">
                 <div className="flex -space-x-2">
-                  <span className="grid h-7 w-7 place-items-center rounded-full border border-[#080809] bg-[#1A0A0D] text-[#A08A63]"><StellarMark /></span>
-                  <span className="grid h-7 w-7 place-items-center rounded-full border border-[#080809] bg-[#1b1b1e] text-white/65">
+                  <span className="grid h-7 w-7 place-items-center rounded-full border border-[#111114] bg-[#24171C] text-[#A08A63]"><StellarMark /></span>
+                  <span className="grid h-7 w-7 place-items-center rounded-full border border-[#111114] bg-[#28282F] text-white/65">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Z"/><path d="m4.5 7.8 7.5 4.4 7.5-4.4M12 12.2V21"/></svg>
                   </span>
                 </div>
