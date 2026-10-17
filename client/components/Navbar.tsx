@@ -74,7 +74,7 @@ export default function Navbar({ walletAddress, onConnect, onDisconnect, isConne
     <nav className={"sticky top-0 z-50 w-full border-b backdrop-blur-2xl transition-colors duration-300 " + (scrolled ? "border-white/[0.09] bg-[#080809]/85 shadow-[0_10px_40px_rgba(0,0,0,0.18)]" : "border-white/[0.055] bg-[#080809]/55")}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5 sm:px-8 sm:py-4">
         <a href="#" aria-label="StellarCanvas home" className="group flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-[14px] border border-[#B71C1C]/35 bg-[#B71C1C]/[0.08] text-[#B71C1C] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-colors group-hover:bg-[#8E1616]/[0.13]">
+          <span className="grid h-10 w-10 place-items-center rounded-[14px] border border-[#5A0E1B]/35 bg-[#5A0E1B]/[0.08] text-[#A08A63] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] transition-colors group-hover:bg-[#701527]/[0.13]">
             <svg width="22" height="22" viewBox="0 0 28 28" fill="none" aria-hidden="true">
               <path d="M5 8h18M5 14h18M5 20h18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity=".55" />
               <path d="m7 21 14-14" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
@@ -87,8 +87,8 @@ export default function Navbar({ walletAddress, onConnect, onDisconnect, isConne
         </a>
 
         <div className="flex items-center gap-2.5 sm:gap-3">
-          <Badge variant="default" className="border-[#B71C1C]/20 bg-[#B71C1C]/[0.07] px-2.5 py-1.5 text-[10px] tracking-wide text-[#B71C1C] sm:px-3">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#B71C1C]" />
+          <Badge variant="default" className="border-[#5A0E1B]/25 bg-[#5A0E1B]/[0.08] px-2.5 py-1.5 text-[10px] tracking-wide text-[#B4A17D] sm:px-3">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#5A0E1B]" />
             {NETWORK}
           </Badge>
 
@@ -100,7 +100,7 @@ export default function Navbar({ walletAddress, onConnect, onDisconnect, isConne
                 onClick={(event) => { event.stopPropagation(); setShowDropdown(!showDropdown); }}
                 className="flex min-h-10 items-center gap-2 rounded-full border border-white/[0.11] bg-white/[0.04] px-2.5 text-sm text-white/80 hover:border-white/20 hover:bg-white/[0.075] sm:gap-2.5 sm:px-3"
               >
-                <span className="grid h-6 w-6 place-items-center rounded-full bg-[#B71C1C]/15 text-[9px] font-semibold text-[#B71C1C]">{walletAddress.slice(0, 2)}</span>
+                <span className="grid h-6 w-6 place-items-center rounded-full bg-[#5A0E1B]/15 text-[9px] font-semibold text-[#A08A63]">{walletAddress.slice(0, 2)}</span>
                 <span className="font-mono text-[11px] sm:text-xs">{truncate(walletAddress)}</span>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={"text-white/45 transition-transform " + (showDropdown ? "rotate-180" : "")} aria-hidden="true">
                   <path d="m7 10 5 5 5-5" />
@@ -118,7 +118,7 @@ export default function Navbar({ walletAddress, onConnect, onDisconnect, isConne
                       <CopyIcon />
                       {copied ? "Address copied" : "Copy address"}
                     </button>
-                    <button role="menuitem" onClick={() => { onDisconnect(); setShowDropdown(false); }} className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-left text-sm text-[#8E1616]/80 hover:bg-[#8E1616]/[0.09] hover:text-[#B71C1C]">
+                    <button role="menuitem" onClick={() => { onDisconnect(); setShowDropdown(false); }} className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-left text-sm text-[#A08A63]/80 hover:bg-[#701527]/[0.09] hover:text-[#D0BC95]">
                       <PowerIcon />
                       Disconnect wallet
                     </button>
@@ -130,7 +130,7 @@ export default function Navbar({ walletAddress, onConnect, onDisconnect, isConne
             <button
               onClick={onConnect}
               disabled={isConnecting}
-              className="inline-flex min-h-10 items-center gap-2 rounded-full bg-[#B71C1C] px-4 text-xs font-semibold text-white shadow-[0_6px_22px_rgba(183,28,28,0.17)] hover:bg-[#8E1616] hover:shadow-[0_8px_28px_rgba(183,28,28,0.25)] disabled:opacity-55 sm:px-4.5 sm:text-sm"
+              className="inline-flex min-h-10 items-center gap-2 rounded-full bg-[#5A0E1B] px-4 text-xs font-semibold text-white shadow-[0_6px_22px_rgba(90,14,27,0.17)] hover:bg-[#701527] hover:shadow-[0_8px_28px_rgba(90,14,27,0.25)] disabled:opacity-55 sm:px-4.5 sm:text-sm"
             >
               <WalletIcon size={15} />
               {isConnecting ? "Connecting..." : "Connect wallet"}
