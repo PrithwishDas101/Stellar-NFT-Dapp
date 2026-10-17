@@ -33,7 +33,7 @@ export function Spotlight({ className, children }: SpotlightProps) {
       <div
         className="pointer-events-none absolute -inset-px z-10 rounded-[inherit] transition-opacity duration-300"
         style={{
-          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(124,108,240,0.06), transparent 40%)`,
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(90,14,27,0.10), transparent 40%)`,
           opacity,
         }}
       />
