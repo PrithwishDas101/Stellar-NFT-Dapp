@@ -2,9 +2,9 @@
 
 :root {
   color-scheme: dark;
-  --background: #080809;
-  --surface: #111112;
-  --surface-raised: #171719;
+  --background: #111114;
+  --surface: #1A1A20;
+  --surface-raised: #24242B;
   --foreground: #f5f5f7;
   --muted: #929297;
   --border: rgba(255, 255, 255, 0.09);
@@ -36,7 +36,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(ellipse at 50% -22%, rgba(90, 14, 27, 0.09), transparent 45%),
+    radial-gradient(ellipse at 50% -22%, rgba(90, 14, 27, 0.14), transparent 45%),
     var(--background);
   color: var(--foreground);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -49,7 +49,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   content: "";
-  background: radial-gradient(ellipse at 90% 45%, rgba(90, 14, 27, 0.035), transparent 36%);
+  background: radial-gradient(ellipse at 90% 45%, rgba(90, 14, 27, 0.075), transparent 36%);
 }
 
 ::selection {
@@ -163,7 +163,7 @@ textarea {
   border-radius: 28px;
   background:
     radial-gradient(circle at 50% 42%, rgba(90, 14, 27, 0.15), transparent 30%),
-    linear-gradient(145deg, #1b1112 0%, #111112 48%, #09090a 100%);
+    linear-gradient(145deg, #2A2024 0%, #1E1E24 48%, #141418 100%);
   box-shadow: 0 30px 100px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.045);
 }
 
@@ -235,8 +235,8 @@ textarea {
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 20px;
-  color: rgba(255, 255, 255, 0.92);
-  background: rgba(12, 12, 13, 0.48);
+  color: rgba(255, 255, 255, 0.96);
+  background: rgba(28, 28, 34, 0.78);
   backdrop-filter: blur(16px);
   transform: translate(-50%, -50%) rotate(-8deg);
   box-shadow: 0 18px 36px rgba(0,0,0,.28);
@@ -261,7 +261,7 @@ textarea {
   border-radius: 999px;
   padding: 7px 10px;
   color: rgba(255, 255, 255, 0.72);
-  background: rgba(9, 9, 10, 0.52);
+  background: rgba(27, 27, 32, 0.78);
   font-size: 10px;
   letter-spacing: 0.08em;
   backdrop-filter: blur(16px);
