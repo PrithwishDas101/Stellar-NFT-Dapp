@@ -21,8 +21,8 @@ function StellarMark() {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
       <path d="M7 10.5h18M7 16h18M7 21.5h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" opacity=".45" />
-      <path d="m9 23 14-14" stroke="#ff453a" strokeWidth="2.8" strokeLinecap="round" />
-      <circle cx="23" cy="9" r="2" fill="#ff453a" />
+      <path d="m9 23 14-14" stroke="#B71C1C" strokeWidth="2.8" strokeLinecap="round" />
+      <circle cx="23" cy="9" r="2" fill="#B71C1C" />
     </svg>
   );
 }
@@ -72,14 +72,14 @@ export default function Home() {
           <section className="grid items-center gap-10 pb-14 sm:gap-12 lg:grid-cols-[1fr_0.88fr] lg:gap-16 lg:pb-20">
             <div className="animate-fade-in-up">
               <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/[0.09] bg-white/[0.035] px-3.5 py-2 text-[11px] font-medium tracking-[0.13em] text-white/60">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#ff453a] shadow-[0_0_12px_rgba(255,69,58,0.75)]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#B71C1C] shadow-[0_0_12px_rgba(183,28,28,0.75)]" />
                 STELLAR TESTNET
               </div>
 
               <h1 className="max-w-2xl text-[2.9rem] font-semibold leading-[0.99] tracking-[-0.065em] text-white sm:text-6xl lg:text-[4.5rem]">
                 Digital art,
                 <br />
-                <span className="text-[#ff6258]">without the noise.</span>
+                <span className="text-[#B71C1C]">without the noise.</span>
               </h1>
 
               <p className="mt-6 max-w-lg text-base leading-7 text-white/55 sm:text-lg sm:leading-8">
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <a
                   href="#gallery"
-                  className="inline-flex min-h-12 items-center gap-2.5 rounded-full bg-[#ff453a] px-5 text-sm font-semibold text-white shadow-[0_8px_28px_rgba(255,69,58,0.18)] hover:bg-[#ff6258] hover:shadow-[0_10px_34px_rgba(255,69,58,0.25)]"
+                  className="inline-flex min-h-12 items-center gap-2.5 rounded-full bg-[#B71C1C] px-5 text-sm font-semibold text-white shadow-[0_8px_28px_rgba(183,28,28,0.18)] hover:bg-[#8E1616] hover:shadow-[0_10px_34px_rgba(183,28,28,0.25)]"
                 >
                   Explore collection
                   <ArrowUpRightIcon />
@@ -106,7 +106,7 @@ export default function Home() {
 
               <div className="mt-8 flex items-center gap-3 text-xs text-white/35">
                 <div className="flex -space-x-2">
-                  <span className="grid h-7 w-7 place-items-center rounded-full border border-[#080809] bg-[#2a1516] text-[#ff928a]"><StellarMark /></span>
+                  <span className="grid h-7 w-7 place-items-center rounded-full border border-[#080809] bg-[#210D10] text-[#B71C1C]"><StellarMark /></span>
                   <span className="grid h-7 w-7 place-items-center rounded-full border border-[#080809] bg-[#1b1b1e] text-white/65">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Z"/><path d="m4.5 7.8 7.5 4.4 7.5-4.4M12 12.2V21"/></svg>
                   </span>
@@ -117,7 +117,7 @@ export default function Home() {
 
             <div className="hero-art-shell animate-fade-in-up" role="img" aria-label="Abstract red digital artwork preview">
               <div className="absolute left-5 top-5 flex items-center gap-2 text-[10px] font-medium tracking-[0.17em] text-white/45 sm:left-6 sm:top-6">
-                <span className="h-1 w-1 rounded-full bg-[#ff6258]" />
+                <span className="h-1 w-1 rounded-full bg-[#B71C1C]" />
                 STELLAR CANVAS / OBJECT 001
               </div>
               <div className="hero-art-orbit" />
@@ -125,7 +125,7 @@ export default function Home() {
               <div className="hero-art-sigil">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
                   <path d="M6 8h16M6 14h16M6 20h16" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" opacity=".5" />
-                  <path d="m8 21 12-14" stroke="#ff6258" strokeWidth="2.3" strokeLinecap="round" />
+                  <path d="m8 21 12-14" stroke="#B71C1C" strokeWidth="2.3" strokeLinecap="round" />
                 </svg>
               </div>
               <div className="absolute left-6 top-[57%] hidden rounded-xl border border-white/10 bg-black/20 px-3 py-2 text-[10px] leading-5 text-white/45 backdrop-blur-md sm:block">
@@ -137,7 +137,7 @@ export default function Home() {
                   <p className="mb-1 text-[10px] tracking-[0.16em] text-white/40">FEATURED SERIES</p>
                   <p className="text-lg font-medium tracking-tight text-white/90">Signal in Red</p>
                 </div>
-                <span className="hero-art-chip"><span className="h-1.5 w-1.5 rounded-full bg-[#ff6258]" /> DIGITAL OBJECT 001</span>
+                <span className="hero-art-chip"><span className="h-1.5 w-1.5 rounded-full bg-[#B71C1C]" /> DIGITAL OBJECT 001</span>
               </div>
             </div>
           </section>
@@ -161,12 +161,12 @@ export default function Home() {
           <section id="gallery" className="scroll-mt-24">
             <div className="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
-                <p className="mb-2 text-[10px] font-semibold tracking-[0.19em] text-[#ff6258]">THE ON-CHAIN COLLECTION</p>
+                <p className="mb-2 text-[10px] font-semibold tracking-[0.19em] text-[#B71C1C]">THE ON-CHAIN COLLECTION</p>
                 <h2 className="text-2xl font-semibold tracking-[-0.045em] text-white sm:text-3xl">Explore the collection</h2>
                 <p className="mt-2 text-sm text-white/45">Browse the gallery, manage your pieces, or mint something new.</p>
               </div>
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.025] px-3 py-2 text-[11px] text-white/45">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#ff453a]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#B71C1C]" />
                 Connected to Stellar Testnet
               </div>
             </div>
