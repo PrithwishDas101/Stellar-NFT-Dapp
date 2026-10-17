@@ -12,7 +12,7 @@ const variants = {
   default: "border-white/[0.08] bg-white/[0.04] text-white/60",
   success: "border-[#34d399]/20 bg-[#34d399]/10 text-[#34d399]",
   warning: "border-[#fbbf24]/20 bg-[#fbbf24]/10 text-[#fbbf24]",
-  info: "border-[#B71C1C]/20 bg-[#B71C1C]/10 text-[#B71C1C]",
+  info: "border-[#A08A63]/25 bg-[#A08A63]/[0.08] text-[#B4A17D]",
 };
 
 export function Badge({ children, className, variant = "default" }: BadgeProps) {
