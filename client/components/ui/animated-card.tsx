@@ -45,7 +45,7 @@ export function AnimatedCard({
       <div
         className="pointer-events-none absolute -inset-px z-0 rounded-[inherit] transition-opacity duration-300"
         style={{
-          background: `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(255,69,58,0.09), transparent 40%)`,
+          background: `radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(183,28,28,0.09), transparent 40%)`,
           opacity: isHovered ? 1 : 0,
         }}
       />
