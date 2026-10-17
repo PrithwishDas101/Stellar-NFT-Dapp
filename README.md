@@ -1,76 +1,117 @@
-## 🌌 StellarNFT Smart Contract
+# StellarCanvas — NFT Gallery on Stellar
 
-## 📌 Project Description
+StellarCanvas is a browser-based NFT gallery built on the Stellar network and Soroban smart contracts. It lets users connect a Freighter wallet, mint digital collectibles, browse the collection, update metadata, and transfer NFTs between accounts.
 
-
-**StellarNFT** is a Soroban-based smart contract deployed on the Stellar Testnet that enables a decentralized NFT gallery experience. It allows users to mint, store, transfer, and manage NFTs directly on-chain, with lightweight and efficient contract logic optimized for the Stellar ecosystem.
-
----
-## The UI
-
-<img width="1500" height="1264" alt="NFT-Gallery-Soroban-UI" src="https://github.com/user-attachments/assets/a62279eb-63de-40fd-b74b-5ff8bc4632b3" />
-
-
-## Demo
-<img width="1907" height="887" alt="image" src="https://github.com/user-attachments/assets/05124fbd-92f4-4f57-847d-7116eeb1a208" />
+The project combines a Next.js frontend with a Rust smart contract. It is currently configured for Stellar Testnet.
 
 ## Live Demo
-https://stellar-nft-dapp-u6d8.vercel.app/
 
-## 🚀 What It Does
+[Open StellarCanvas](https://stellar-nft-dapp-u6d8.vercel.app/)
 
-StellarCanvas provides core NFT functionality through a simple and extensible smart contract. Users can:
+The demo uses the Stellar Testnet. Wallet interactions require the Freighter browser extension and a testnet account.
 
-* Mint NFTs with associated metadata (e.g., IPFS links or JSON)
-* Store ownership data securely on-chain
-* Transfer NFTs between accounts
-* Retrieve NFT details and view a global gallery
+## Features
 
-The contract acts as a foundational layer for building NFT-based applications such as galleries, marketplaces, or digital collectibles platforms.
+- **Mint NFTs:** create a collectible with a name, description, and image URL.
+- **Browse the gallery:** view NFTs recorded by the smart contract.
+- **Manage owned NFTs:** view collectibles associated with the connected wallet.
+- **Edit metadata:** update an NFT's name, description, and image URL when authorized as its owner.
+- **Transfer ownership:** send an NFT to another Stellar account.
+- **On-chain records:** NFT metadata, ownership, and owner indexes are managed by the Soroban contract.
+- **Freighter integration:** connect a wallet and sign contract transactions directly from the browser.
 
----
+## Technology
 
-## ✨ Features
+| Layer | Technologies |
+| --- | --- |
+| Frontend | Next.js, React, TypeScript, Tailwind CSS |
+| Wallet | Freighter |
+| Stellar client | Stellar JavaScript SDK |
+| Smart contract | Rust, Soroban SDK |
+| Network | Stellar Testnet |
 
-* 🔹 NFT Minting with metadata support
-* 🔹 On-chain ownership tracking
-* 🔹 Secure transfer mechanism
-* 🔹 Approval-based transfer model (ERC-721 style)
-* 🔹 Global NFT gallery view
-* 🔹 Lightweight and scalable design using Soroban SDK
+## Project Structure
 
----
+```text
+Stellar-NFT-Dapp/
+├── client/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── Contract.tsx
+│   │   └── Navbar.tsx
+│   ├── hooks/
+│   │   └── contract.ts
+│   └── package.json
+└── contract/
+    ├── contracts/
+    │   └── contract/
+    │       └── src/
+    │           ├── lib.rs
+    │           └── test.rs
+    └── Cargo.toml
+```
 
-## 🔗 Deployed Smart Contract
+## Run the Frontend Locally
 
-* **Contract ID:**
-  `CBKWKQIABVDY66ASDMABZVV66HC3B6DHRW6A2KCQBXZ5F2NL4I7UDMGZ`
+### Requirements
 
-* **Explorer Link:**
-  https://lab.stellar.org/smart-contracts/contract-explorer?$=network$id=testnet&label=Testnet&horizonUrl=https:////horizon-testnet.stellar.org&rpcUrl=https:////soroban-testnet.stellar.org&passphrase=Test%20SDF%20Network%20/;%20September%202015;&smartContracts$explorer$contractId=CBKWKQIABVDY66ASDMABZVV66HC3B6DHRW6A2KCQBXZ5F2NL4I7UDMGZ
+- Node.js and npm
+- Freighter browser extension
+- A Stellar Testnet account for signing transactions
 
----
+### Installation
 
-## 🛠️ Tech Stack
+From the repository root:
 
-* Rust (Soroban SDK)
-* Stellar Soroban Smart Contracts
-* Stellar Testnet
+```bash
+cd client
+npm install
+npm run dev
+```
 
----
+Open [http://localhost:3000](http://localhost:3000).
 
-## 📦 Future Improvements
+To create a production build:
 
-* IPFS metadata standardization
-* NFT marketplace integration
-* Creator royalties
-* Frontend gallery interface
-* Enhanced indexing and search
+```bash
+npm run build
+npm run start
+```
 
+## Smart Contract
 
+The contract source is in `contract/contracts/contract/src/lib.rs`. It exposes methods for minting NFTs, transferring them, updating owner-controlled metadata, reading a specific NFT, listing all NFTs, retrieving an owner's NFTs, and fetching a paginated list.
 
-## 👨‍💻 Author
+Run the contract tests from the repository root:
 
-Developed by Prithwish Das as a blockchain project showcasing Soroban smart contract capabilities on Stellar.
+```bash
+cd contract
+cargo test
+```
 
+Building or deploying the contract also requires the Rust toolchain and Stellar CLI/Soroban tooling configured for your environment.
 
+## Network Configuration
+
+The frontend's current network settings are defined in `client/hooks/contract.ts`:
+
+- **Network:** Stellar Testnet
+- **Soroban RPC:** `https://soroban-testnet.stellar.org`
+- **Horizon:** `https://horizon-testnet.stellar.org`
+- **Contract address configured by the client:** `CCZYBHDQMYUV5WAMJODBDVH7OEH2W7JQDEYGX6RZRICVGA26LORKSHBJ`
+
+Keep the frontend's contract address in sync with the contract deployment you intend to use. Use a Testnet account and test XLM for test transactions; do not use a mainnet wallet balance for this project.
+
+## Notes
+
+- NFT image URLs are stored as metadata references; the contract does not upload image files.
+- The application is intended for Testnet experimentation and learning, not production asset custody.
+- Transaction signing is performed through Freighter. Never share a wallet's secret key or recovery phrase.
+
+## Author
+
+Built by [Prithwish Das](https://github.com/PrithwishDas101).
