@@ -4,6 +4,20 @@ StellarCanvas is a browser-based NFT gallery built on the Stellar network and So
 
 The project combines a Next.js frontend with a Rust smart contract. It is currently configured for Stellar Testnet.
 
+## Screenshots
+
+### Gallery interface
+
+<p align="center">
+  <img width="1500" height="1264" alt="StellarCanvas NFT gallery interface" src="https://github.com/user-attachments/assets/a62279eb-63de-40fd-b74b-5ff8bc4632b3" />
+</p>
+
+### Application demo
+
+<p align="center">
+  <img width="1907" height="887" alt="StellarCanvas application demo" src="https://github.com/user-attachments/assets/05124fbd-92f4-4f57-847d-7116eeb1a208" />
+</p>
+
 ## Live Demo
 
 [Open StellarCanvas](https://stellar-nft-dapp-u6d8.vercel.app/)
