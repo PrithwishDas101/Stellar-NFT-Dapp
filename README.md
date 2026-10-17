@@ -9,7 +9,8 @@ The project combines a Next.js frontend with a Rust smart contract. It is curren
 ### Gallery interface
 
 <p align="center">
-  <img width="1500" height="1264" alt="StellarCanvas NFT gallery interface" src="https://github.com/user-attachments/assets/a62279eb-63de-40fd-b74b-5ff8bc4632b3" />
+  <img width="1917" height="905" alt="image" src="https://github.com/user-attachments/assets/d1c93923-3101-4ddd-a5d4-7d2f33aa04ab" />
+  <img width="1917" height="750" alt="image" src="https://github.com/user-attachments/assets/060012e7-7567-453d-8ddd-5526f5846d89" />
 </p>
 
 ### Application demo
