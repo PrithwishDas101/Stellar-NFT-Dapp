@@ -125,7 +125,7 @@ function Input({
       <label className="block text-[11px] font-medium uppercase tracking-wider text-white/30">
         {label}
       </label>
-      <div className="group rounded-xl border border-white/[0.06] bg-white/[0.02] p-px transition-all focus-within:border-[#ff453a]/30 focus-within:shadow-[0_0_20px_rgba(124,108,240,0.08)]">
+      <div className="group rounded-xl border border-white/[0.06] bg-white/[0.02] p-px transition-all focus-within:border-[#B71C1C]/30 focus-within:shadow-[0_0_20px_rgba(183,28,28,0.08)]">
         <input
           {...props}
           className="w-full rounded-[11px] bg-transparent px-4 py-3 font-mono text-sm text-white/90 placeholder:text-white/15 outline-none"
@@ -146,7 +146,7 @@ function Textarea({
       <label className="block text-[11px] font-medium uppercase tracking-wider text-white/30">
         {label}
       </label>
-      <div className="group rounded-xl border border-white/[0.06] bg-white/[0.02] p-px transition-all focus-within:border-[#ff453a]/30 focus-within:shadow-[0_0_20px_rgba(124,108,240,0.08)]">
+      <div className="group rounded-xl border border-white/[0.06] bg-white/[0.02] p-px transition-all focus-within:border-[#B71C1C]/30 focus-within:shadow-[0_0_20px_rgba(183,28,28,0.08)]">
         <textarea
           {...props}
           rows={3}
@@ -175,7 +175,7 @@ function NFTCard({
 
   return (
     <div className="group rounded-xl border border-white/[0.06] bg-white/[0.02] overflow-hidden transition-all hover:border-white/[0.1] hover:bg-white/[0.04]">
-      <div className="aspect-square bg-gradient-to-br from-[#ff453a]/10 to-[#ff453a]/10 flex items-center justify-center relative overflow-hidden">
+      <div className="aspect-square bg-gradient-to-br from-[#B71C1C]/10 to-[#B71C1C]/10 flex items-center justify-center relative overflow-hidden">
         {nft.image_url ? (
           <img
             src={nft.image_url}
@@ -206,14 +206,14 @@ function NFTCard({
             <div className="flex items-center gap-1">
               <button
                 onClick={() => onEdit(nft.id)}
-                className="p-1.5 rounded-lg text-white/30 hover:text-[#ff6258] hover:bg-[#ff6258]/10 transition-all"
+                className="p-1.5 rounded-lg text-white/30 hover:text-[#B71C1C] hover:bg-[#8E1616]/10 transition-all"
                 title="Edit metadata"
               >
                 <EditIcon />
               </button>
               <button
                 onClick={() => onTransfer(nft.id)}
-                className="p-1.5 rounded-lg text-white/30 hover:text-[#ff453a] hover:bg-[#ff453a]/10 transition-all"
+                className="p-1.5 rounded-lg text-white/30 hover:text-[#B71C1C] hover:bg-[#8E1616]/10 transition-all"
                 title="Transfer"
               >
                 <SendIcon />
@@ -258,7 +258,7 @@ function TransferModal({
         <ShimmerButton
           onClick={() => onTransfer(recipient)}
           disabled={!recipient.trim() || isTransferring}
-          shimmerColor="#ff453a"
+          shimmerColor="#B71C1C"
           className="w-full"
         >
           {isTransferring ? <><SpinnerIcon /> Transferring...</> : <><SendIcon /> Transfer</>}
@@ -314,7 +314,7 @@ function EditModal({
         <ShimmerButton
           onClick={() => onSave(name, description, imageUrl)}
           disabled={!name.trim() || isSaving}
-          shimmerColor="#ff6258"
+          shimmerColor="#B71C1C"
           className="w-full"
         >
           {isSaving ? <><SpinnerIcon /> Saving...</> : <><CheckIcon /> Save Changes</>}
@@ -368,7 +368,7 @@ function MintModal({
         <ShimmerButton
           onClick={() => onMint(name, description, imageUrl)}
           disabled={!name.trim() || isMinting}
-          shimmerColor="#ff453a"
+          shimmerColor="#B71C1C"
           className="w-full"
         >
           {isMinting ? <><SpinnerIcon /> Minting...</> : <><ImageIcon /> Mint NFT</>}
@@ -512,9 +512,9 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
   );
 
   const tabs: { key: Tab; label: string; icon: React.ReactNode; color: string }[] = [
-    { key: "gallery", label: "Gallery", icon: <GridIcon />, color: "#ff453a" },
-    { key: "my-nfts", label: "My NFTs", icon: <UserIcon />, color: "#ff6258" },
-    { key: "mint", label: "Mint", icon: <ImageIcon />, color: "#ff8a80" },
+    { key: "gallery", label: "Gallery", icon: <GridIcon />, color: "#B71C1C" },
+    { key: "my-nfts", label: "My NFTs", icon: <UserIcon />, color: "#B71C1C" },
+    { key: "mint", label: "Mint", icon: <ImageIcon />, color: "#8E1616" },
   ];
 
   const displayNFTs = activeTab === "my-nfts" ? myNFTs : allNFTs;
@@ -523,13 +523,13 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
     <div className="w-full max-w-4xl animate-fade-in-up-delayed">
       {/* Toasts */}
       {error && (
-        <div className="mb-4 flex items-start gap-3 rounded-xl border border-[#f87171]/15 bg-[#f87171]/[0.05] px-4 py-3 backdrop-blur-sm animate-slide-down">
-          <span className="mt-0.5 text-[#f87171]"><AlertIcon /></span>
+        <div className="mb-4 flex items-start gap-3 rounded-xl border border-[#B71C1C]/15 bg-[#B71C1C]/[0.05] px-4 py-3 backdrop-blur-sm animate-slide-down">
+          <span className="mt-0.5 text-[#B71C1C]"><AlertIcon /></span>
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-medium text-[#f87171]/90">Error</p>
-            <p className="text-xs text-[#f87171]/50 mt-0.5 break-all">{error}</p>
+            <p className="text-sm font-medium text-[#B71C1C]/90">Error</p>
+            <p className="text-xs text-[#B71C1C]/50 mt-0.5 break-all">{error}</p>
           </div>
-          <button onClick={() => setError(null)} className="shrink-0 text-[#f87171]/30 hover:text-[#f87171]/70 text-lg leading-none">&times;</button>
+          <button onClick={() => setError(null)} className="shrink-0 text-[#B71C1C]/30 hover:text-[#B71C1C]/70 text-lg leading-none">&times;</button>
         </div>
       )}
 
@@ -548,8 +548,8 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
           {/* Header */}
           <div className="flex items-center justify-between border-b border-white/[0.06] px-6 py-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#ff453a]/20 to-[#ff453a]/20 border border-white/[0.06]">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#ff453a]">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#B71C1C]/20 to-[#B71C1C]/20 border border-white/[0.06]">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#B71C1C]">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
                   <circle cx="8.5" cy="8.5" r="1.5" />
                   <polyline points="21 15 16 10 5 21" />
@@ -602,7 +602,7 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
               {activeTab !== "mint" && (
                 <ShimmerButton
                   onClick={activeTab === "gallery" ? loadAllNFTs : loadMyNFTs}
-                  shimmerColor="#ff453a"
+                  shimmerColor="#B71C1C"
                   className="px-3 py-1.5 text-xs"
                 >
                   {isLoading ? <SpinnerIcon /> : <RefreshIcon />}
@@ -632,7 +632,7 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
                       <button
                         onClick={onConnect}
                         disabled={isConnecting}
-                        className="mt-4 rounded-xl border border-dashed border-[#ff453a]/20 bg-[#ff453a]/[0.03] px-6 py-3 text-sm text-[#ff453a]/60 hover:border-[#ff453a]/30 hover:text-[#ff453a]/80 transition-all"
+                        className="mt-4 rounded-xl border border-dashed border-[#B71C1C]/20 bg-[#B71C1C]/[0.03] px-6 py-3 text-sm text-[#B71C1C]/60 hover:border-[#8E1616]/30 hover:text-[#B71C1C]/80 transition-all"
                       >
                         Connect wallet to view your NFTs
                       </button>
@@ -666,7 +666,7 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
                 {walletAddress ? (
                   <ShimmerButton
                     onClick={() => setShowMintModal(true)}
-                    shimmerColor="#ff453a"
+                    shimmerColor="#B71C1C"
                     className="mt-4"
                   >
                     <ImageIcon />
@@ -676,7 +676,7 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
                   <button
                     onClick={onConnect}
                     disabled={isConnecting}
-                    className="mt-4 rounded-xl border border-dashed border-[#ff453a]/20 bg-[#ff453a]/[0.03] px-6 py-3 text-sm text-[#ff453a]/60 hover:border-[#ff453a]/30 hover:text-[#ff453a]/80 transition-all"
+                    className="mt-4 rounded-xl border border-dashed border-[#B71C1C]/20 bg-[#B71C1C]/[0.03] px-6 py-3 text-sm text-[#B71C1C]/60 hover:border-[#8E1616]/30 hover:text-[#B71C1C]/80 transition-all"
                   >
                     Connect wallet to mint
                   </button>
