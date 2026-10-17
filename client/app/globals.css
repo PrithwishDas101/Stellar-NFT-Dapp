@@ -8,9 +8,9 @@
   --foreground: #f5f5f7;
   --muted: #929297;
   --border: rgba(255, 255, 255, 0.09);
-  --accent: #B71C1C;
-  --accent-hover: #8E1616;
-  --accent-soft: rgba(183, 28, 28, 0.12);
+  --accent: #5A0E1B;
+  --accent-hover: #701527;
+  --accent-soft: rgba(90, 14, 27, 0.12);
 }
 
 @theme inline {
@@ -36,7 +36,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(ellipse at 50% -22%, rgba(183, 28, 28, 0.09), transparent 45%),
+    radial-gradient(ellipse at 50% -22%, rgba(90, 14, 27, 0.09), transparent 45%),
     var(--background);
   color: var(--foreground);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -49,12 +49,12 @@ body::before {
   inset: 0;
   pointer-events: none;
   content: "";
-  background: radial-gradient(ellipse at 90% 45%, rgba(183, 28, 28, 0.035), transparent 36%);
+  background: radial-gradient(ellipse at 90% 45%, rgba(90, 14, 27, 0.035), transparent 36%);
 }
 
 ::selection {
   color: #fff;
-  background: rgba(183, 28, 28, 0.38);
+  background: rgba(90, 14, 27, 0.38);
 }
 
 :focus-visible {
@@ -99,11 +99,11 @@ textarea {
 }
 
 .glow {
-  box-shadow: 0 0 36px rgba(183, 28, 28, 0.1);
+  box-shadow: 0 0 36px rgba(90, 14, 27, 0.1);
 }
 
 .glow-hover:hover {
-  box-shadow: 0 0 34px rgba(183, 28, 28, 0.16);
+  box-shadow: 0 0 34px rgba(90, 14, 27, 0.16);
 }
 
 .animate-fade-in-up {
@@ -162,7 +162,7 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 28px;
   background:
-    radial-gradient(circle at 50% 42%, rgba(183, 28, 28, 0.15), transparent 30%),
+    radial-gradient(circle at 50% 42%, rgba(90, 14, 27, 0.15), transparent 30%),
     linear-gradient(145deg, #1b1112 0%, #111112 48%, #09090a 100%);
   box-shadow: 0 30px 100px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.045);
 }
@@ -184,10 +184,10 @@ textarea {
   left: 50%;
   width: min(68%, 280px);
   aspect-ratio: 1;
-  border: 1px solid rgba(142, 22, 22, 0.35);
+  border: 1px solid rgba(112, 21, 39, 0.48);
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(-28deg) scaleY(0.62);
-  box-shadow: 0 0 45px rgba(183, 28, 28, 0.08), inset 0 0 28px rgba(183, 28, 28, 0.035);
+  box-shadow: 0 0 45px rgba(90, 14, 27, 0.08), inset 0 0 28px rgba(90, 14, 27, 0.035);
 }
 
 .hero-art-orbit::after {
@@ -204,12 +204,12 @@ textarea {
   left: 50%;
   width: clamp(120px, 30%, 172px);
   aspect-ratio: 0.82;
-  border: 1px solid rgba(142, 22, 22, 0.65);
+  border: 1px solid rgba(112, 21, 39, 0.72);
   border-radius: 49% 51% 44% 56% / 40% 43% 57% 60%;
   background:
-    radial-gradient(ellipse at 28% 22%, rgba(170, 26, 30, 0.96), transparent 9%),
-    radial-gradient(ellipse at 35% 25%, #A61B24 0%, #8E1616 28%, #5C0B12 57%, #10080A 78%);
-  box-shadow: 0 0 55px rgba(183, 28, 28, 0.23), inset -20px -30px 50px rgba(0, 0, 0, 0.65), inset 8px 10px 20px rgba(142, 22, 22, 0.25);
+    radial-gradient(ellipse at 28% 22%, rgba(160, 138, 99, 0.30), transparent 9%),
+    radial-gradient(ellipse at 35% 25%, #701527 0%, #701527 28%, #300911 57%, #10080A 78%);
+  box-shadow: 0 0 42px rgba(90, 14, 27, 0.18), inset -20px -30px 50px rgba(0, 0, 0, 0.65), inset 8px 10px 20px rgba(112, 21, 39, 0.25);
   transform: translate(-50%, -50%) rotate(28deg);
 }
 
@@ -220,7 +220,7 @@ textarea {
   width: 25%;
   height: 15%;
   border-radius: 50%;
-  background: rgba(145, 20, 24, 0.78);
+  background: rgba(160, 138, 99, 0.18);
   filter: blur(10px);
   content: "";
 }
