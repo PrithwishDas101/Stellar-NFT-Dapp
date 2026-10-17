@@ -12,7 +12,7 @@ interface ShimmerButtonProps
 }
 
 export function ShimmerButton({
-  shimmerColor = "#7c6cf0",
+  shimmerColor = "#ff453a",
   shimmerSize = "0.1em",
   shimmerDuration = "2.5s",
   borderRadius = "12px",
@@ -24,7 +24,7 @@ export function ShimmerButton({
   return (
     <button
       className={cn(
-        "group relative overflow-hidden whitespace-nowrap px-6 py-3 text-sm font-medium text-white transition-all hover:shadow-[0_0_40px_8px_rgba(124,108,240,0.15)]",
+        "group relative overflow-hidden whitespace-nowrap px-6 py-3 text-sm font-medium text-white transition-all hover:shadow-[0_0_40px_8px_rgba(255,69,58,0.13)]",
         "disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-none",
         className
       )}
