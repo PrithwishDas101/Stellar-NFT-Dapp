@@ -512,9 +512,9 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
   );
 
   const tabs: { key: Tab; label: string; icon: React.ReactNode; color: string }[] = [
-    { key: "gallery", label: "Gallery", icon: <GridIcon />, color: "#8B95A3" },
+    { key: "gallery", label: "Gallery", icon: <GridIcon />, color: "#A08A63" },
     { key: "my-nfts", label: "My NFTs", icon: <UserIcon />, color: "#8B95A3" },
-    { key: "mint", label: "Mint", icon: <ImageIcon />, color: "#A08A63" },
+    { key: "mint", label: "Mint", icon: <ImageIcon />, color: "#794250" },
   ];
 
   const displayNFTs = activeTab === "my-nfts" ? myNFTs : allNFTs;
@@ -529,7 +529,7 @@ export default function ContractUI({ walletAddress, onConnect, isConnecting }: C
             <p className="text-sm font-medium text-[#B66A72]">Error</p>
             <p className="text-xs text-white/55 mt-0.5 break-all">{error}</p>
           </div>
-          <button onClick={() => setError(null)} className="shrink-0 text-[#A08A63]/30 hover:text-[#D0BC95]/70 text-lg leading-none">&times;</button>
+          <button onClick={() => setError(null)} className="shrink-0 text-white/30 hover:text-white/70 text-lg leading-none">&times;</button>
         </div>
       )}
 
